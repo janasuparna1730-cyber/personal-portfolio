@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suparna Jana | YCSAS Intern</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#f7f1fb;
+  color:#333;
+  scroll-behavior:smooth;
+  transition:0.4s;
+}
+
+.dark{
+  background:#1b1026;
+  color:#eee;
+}
+
+section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:35px;
+  color:#6a1b9a;
+}
+
+/* ---------- HEADER ---------- */
+header{
+  background:linear-gradient(135deg,#7b1fa2,#ec407a);
+  color:white;
+  text-align:center;
+  padding:90px 20px;
+  border-bottom-left-radius:60px;
+  border-bottom-right-radius:60px;
+}
+
+header h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+header p{
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+header button{
+  margin-top:20px;
+  padding:12px 28px;
+  border:none;
+  border-radius:25px;
+  background:white;
+  color:#7b1fa2;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+header button:hover{
+  transform:scale(1.1);
+}
+
+/* ---------- ABOUT ---------- */
+.about{
+  background:linear-gradient(135deg,#fde4f2,#f3e5f5);
+  border-radius:20px;
+}
+
+.about p{
+  text-align:center;
+  font-size:17px;
+  line-height:1.7;
+}
+
+/* ---------- SKILLS ---------- */
+.skills-box{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:25px;
+}
+
+.skill{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  font-weight:bold;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.skill:hover{
+  transform:translateY(-10px);
+  background:#ce93d8;
+  color:white;
+}
+
+/* ---------- INTERNSHIP ---------- */
+.internship{
+  background:linear-gradient(135deg,#ede7f6,#fce4ec);
+  border-radius:20px;
+  padding:40px;
+}
+
+/* ---------- PROJECTS ---------- */
+.projects-box{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.project{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.project:hover{
+  transform:scale(1.05);
+}
+
+/* ---------- CONTACT ---------- */
+.contact form{
+  max-width:420px;
+  margin:auto;
+  display:flex;
+  gap:10px;
+}
+
+.contact input{
+  flex:1;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #bbb;
+}
+
+.contact button{
+  padding:12px 25px;
+  border:none;
+  border-radius:10px;
+  background:#8e24aa;
+  color:white;
+  cursor:pointer;
+}
+
+.contact button:hover{
+  background:#ab47bc;
+}
+
+.contact p{
+  text-align:center;
+  margin-top:20px;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#4a148c;
+  color:white;
+  margin-top:40px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:600px){
+  header h1{
+    font-size:30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HOME -->
+<header>
+  <h1>Suparna Jana</h1>
+  <p>Web Development Intern at YCSAS</p>
+  <p>Computer Science Engineering & Technology Student</p>
+  <button onclick="toggleMode()">Dark / Light Mode</button>
+</header>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a <b>Computer Science Engineering & Technology</b> student passionate about web development.  
+    My career goal is to become a professional web developer.  
+    I joined the <b>YCSAS Internship</b> to gain hands-on experience, improve my technical skills,
+    and work on real-world projects.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Skills</h2>
+  <div class="skills-box">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">React (Basic)</div>
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section class="internship">
+  <h2>YCSAS Internship</h2>
+  <p>
+    <b>Internship Name:</b> YCSAS Web Development Internship<br><br>
+    <b>Topics Learned:</b> HTML, CSS, JavaScript DOM Manipulation, Git & GitHub, Hosting<br><br>
+    <b>Experience Gained:</b> Real-world projects, clean coding, teamwork, problem-solving skills.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <h2>Projects & Tasks</h2>
+  <div class="projects-box">
+    <div class="project">
+      <h3>To-Do List App</h3>
+      <p>JavaScript based task manager with DOM manipulation.</p>
+    </div>
+    <div class="project">
+      <h3>HTML Reference Website</h3>
+      <p>Complete HTML learning guide website.</p>
+    </div>
+    <div class="project">
+      <h3>Personal Portfolio</h3>
+      <p>Interactive and responsive portfolio website.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact Me</h2>
+  <form onsubmit="return validateForm()">
+    <input type="email" id="email" value="janasuparna1730@gmail.com">
+    <button type="submit">Send</button>
+  </form>
+  <p>
+    📧 Email: janasuparna1730@gmail.com<br>
+    🌐 GitHub: https://github.com/janasuparna1730-cyber  </p>
+</section>
+
+<footer>
+  © 2025 | YCSAS Internship Portfolio
+</footer>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle("dark");
+}
+
+function validateForm(){
+  alert("Message sent successfully!");
+  return false;
+}
+</script>
+
+</body>
+</html>
